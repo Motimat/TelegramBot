@@ -1,0 +1,65 @@
+﻿@page "/"
+@using TelegramBot.Context
+@using TelegramBot.Entities.Tables
+@inject TelegramBot.Service.Hub.TelegramHubService hub
+@inject TelegramContext context
+
+
+<p>bot username : joincc_bot</p>
+<p>channel username : jcc_sample</p>
+
+
+@if(position == false)
+{
+    <button @onclick="ChangePosition" class="btn btn-success">turn on</button>
+}
+else{
+    <button @onclick="ChangePosition"  class="btn btn-danger">turn off</button>
+}
+
+
+<button @onclick="GetUsersFromDb" class="btn btn-info">get users from db</button>
+<table class="table">
+    <thead>
+        <tr>
+            <th>user Id</th>
+            <th>telegram Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in Users)
+        {
+            <tr>
+                <td>@user.Id.ToString()</td>
+                <td>@user.UserId.ToString()</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+@code{
+    bool position = false;
+    public List<TelegramUser> Users { get; set; } = new();
+    private async Task ChangePosition()
+    {
+        if(position == false)
+        {
+            hub.Start();
+        }
+        else
+        {
+            hub.Close();
+        }
+        position = !position;
+    }
+
+    public void GetUsersFromDb()
+    {
+        Users =  context.Users.ToList();
+        StateHasChanged();
+    }
+
+
+}

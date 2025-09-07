@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramBot.Entities", "TelegramBot.Entities\TelegramBot.Entities.csproj", "{279F9170-D1B3-42A9-B3CE-007EADFD0566}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramBot.Service", "ClassLibrary1\TelegramBot.Service.csproj", "{D299BF17-9750-4E66-99CF-993AF98F8CDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramBot.Context", "TelegramBot.Context\TelegramBot.Context.csproj", "{6BAC199F-B13F-4ABD-B5D3-1097963136CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramBot.Server", "TelegramBot.Server\TelegramBot.Server.csproj", "{D47EEA44-E08E-487C-A991-B43AA0178C41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{279F9170-D1B3-42A9-B3CE-007EADFD0566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{279F9170-D1B3-42A9-B3CE-007EADFD0566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{279F9170-D1B3-42A9-B3CE-007EADFD0566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{279F9170-D1B3-42A9-B3CE-007EADFD0566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D299BF17-9750-4E66-99CF-993AF98F8CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D299BF17-9750-4E66-99CF-993AF98F8CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D299BF17-9750-4E66-99CF-993AF98F8CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D299BF17-9750-4E66-99CF-993AF98F8CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BAC199F-B13F-4ABD-B5D3-1097963136CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BAC199F-B13F-4ABD-B5D3-1097963136CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BAC199F-B13F-4ABD-B5D3-1097963136CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BAC199F-B13F-4ABD-B5D3-1097963136CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D47EEA44-E08E-487C-A991-B43AA0178C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47EEA44-E08E-487C-A991-B43AA0178C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47EEA44-E08E-487C-A991-B43AA0178C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47EEA44-E08E-487C-A991-B43AA0178C41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C27476E-B5D9-45C5-A0F7-6DAFAC780535}
+	EndGlobalSection
+EndGlobal
